@@ -1,0 +1,53 @@
+Volatility 3 Framework 2.28.3
+
+PID	Process	Module	ImportedFrom	Function	Category	MatchType	Library
+
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\bcrypt.dll	ntdll.dll	NtTerminateProcess	Helper	exact	Ntdll.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-libraryloader-l1-2-0.dll	GetProcAddress	Injection, Evasion	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-localization-l1-2-0.dll	GetThreadLocale	Enumeration	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-registry-l1-1-0.dll	RegCloseKey	Helper	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-sysinfo-l1-1-0.dll	GetTickCount	Anti-Debugging	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-sysinfo-l1-1-0.dll	GetSystemTimeAsFileTime	Enumeration, Anti-Debugging	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-heap-l2-1-0.dll	LocalAlloc	Injection	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-heap-l1-1-0.dll	HeapReAlloc	Injection	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-heap-l1-1-0.dll	GetProcessHeap	Injection	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-heap-l1-1-0.dll	HeapAlloc	Injection	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-synch-l1-2-0.dll	Sleep	Evasion, Anti-Debugging	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetCurrentProcess	Enumeration	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-processthreads-l1-1-0.dll	TerminateProcess	Helper	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetCurrentThreadId	Enumeration	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetCurrentProcessId	Enumeration	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\System32\taskschd.dll	api-ms-win-core-profile-l1-1-0.dll	QueryPerformanceCounter	Anti-Debugging	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	ntdll.dll	NtClose	Helper	exact	Ntdll.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	ntdll.dll	NtSetInformationThread	Helper	exact	Ntdll.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-libraryloader-l1-2-0.dll	LoadResource	Evasion	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-libraryloader-l1-2-0.dll	LoadLibraryExA	Injection, Evasion	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-registry-l1-1-0.dll	RegOpenKeyExA	Helper	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-registry-l1-1-0.dll	RegEnumKeyExA	Enumeration, Helper	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-registry-l1-1-0.dll	RegSetValueExA	Helper	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-registry-l1-1-0.dll	RegDeleteValueA	Helper	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-registry-l1-1-0.dll	RegCreateKeyExA	Helper	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-registry-l1-1-0.dll	RegDeleteKeyExA	Helper	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-registry-l1-1-0.dll	RegQueryInfoKeyA	Enumeration	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-registry-l1-1-0.dll	RegQueryValueExA	Enumeration	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-memory-l1-1-0.dll	MapViewOfFile	Injection	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTSP.dll	api-ms-win-core-memory-l1-1-0.dll	UnmapViewOfFile	Helper	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\system32\rsaenh.dll	ntdll.dll	NtCreateFile	Helper	exact	Ntdll.dll
+1956	MsMpEng.exe	C:\Windows\system32\rsaenh.dll	api-ms-win-core-file-l1-1-0.dll	FindClose	Helper	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\system32\rsaenh.dll	api-ms-win-core-file-l1-1-0.dll	WriteFile	Helper	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\system32\rsaenh.dll	api-ms-win-core-file-l1-1-0.dll	ReadFile	Enumeration	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\system32\rsaenh.dll	api-ms-win-core-processthreads-l1-1-0.dll	OpenProcessToken	Injection	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\system32\rsaenh.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetCurrentThread	Enumeration	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\system32\rsaenh.dll	api-ms-win-core-memory-l1-1-0.dll	VirtualAlloc	Injection	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\system32\rsaenh.dll	api-ms-win-core-memory-l1-1-0.dll	VirtualProtect	Injection	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\CRYPTBASE.dll	ntdll.dll	NtWaitForSingleObject	Evasion, Injection	exact	Ntdll.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-file-l1-1-0.dll	CreateFileA	Helper	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-file-l1-1-0.dll	SetFileTime	Evasion	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-memory-l1-1-0.dll	MapViewOfFileEx	Injection	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-sysinfo-l1-1-0.dll	GetSystemTime	Enumeration, Anti-Debugging	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-sysinfo-l1-1-0.dll	GetVersionExA	Enumeration	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-libraryloader-l1-1-0.dll	LoadLibraryExA	Injection, Evasion	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-libraryloader-l1-1-0.dll	GetProcAddress	Injection, Evasion	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-libraryloader-l1-1-0.dll	GetModuleFileNameA	Helper	exact	Kernel32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-localregistry-l1-1-0.dll	RegCloseKey	Helper	exact	Advapi32.dll
+1956	MsMpEng.exe	C:\Windows\SYSTEM32\imagehlp.dll	api-ms-win-core-debug-l1-1-0.dll	IsDebuggerPresent	Anti-Debugging	exact	Kernel32.dll

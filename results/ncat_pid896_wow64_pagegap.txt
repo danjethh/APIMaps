@@ -1,0 +1,83 @@
+INFO     volatility3.cli: Volatility plugins path: ['/home/claude/apimaps_project/plugin', '/home/claude/pevad_project/vol3_src/volatility3/plugins', '/home/claude/pevad_project/vol3_src/volatility3/framework/plugins']
+INFO     volatility3.cli: Volatility symbols path: ['/home/claude/pevad_project/vol3_src/volatility3/symbols', '/home/claude/pevad_project/vol3_src/volatility3/framework/symbols', '/root/.cache/volatility3/symbols']
+DEBUG    volatility3.plugins.yarascan: Using yara-python module
+DEBUG    volatility3.plugins.renderers.parquet_renderer: Arrow/Parquet libraries not found
+Volatility 3 Framework 2.28.3
+INFO     volatility3.framework.automagic: Detected a windows category plugin
+INFO     volatility3.framework.automagic: Running automagic: ConstructionMagic
+INFO     volatility3.framework.automagic: Running automagic: SymbolCacheMagic
+INFO     volatility3.framework.automagic: Running automagic: LayerStacker
+DEBUG    volatility3.framework.automagic.windows: Detecting Self-referential pointer for recent windows
+DEBUG    volatility3.framework.automagic.windows: WindowsIntelStacker hits: [(<volatility3.framework.automagic.windows.DtbSelfRef64bit object at 0x7fc032be5a90>, 1761280)]
+DEBUG    volatility3.framework.automagic.windows: DtbSelfRef64bit test succeeded at 0x1ae000
+DEBUG    volatility3.framework.automagic.windows: DTB was found at: 0x1ae000
+DEBUG    volatility3.framework.automagic.stacker: physical_layer maximum_address: 4293816319
+DEBUG    volatility3.framework.automagic.stacker: Stacked layers: ['IntelLayer', 'WindowsCrashDump64Layer', 'FileLayer']
+INFO     volatility3.framework.automagic: Running automagic: WinSwapLayers
+INFO     volatility3.framework.automagic: Running automagic: KernelPDBScanner
+DEBUG    volatility3.framework.automagic.pdbscan: Setting kernel_virtual_offset to 0xf8021f400000
+DEBUG    volatility3.framework.symbols.windows.pdbutil: Using symbol library: ntkrnlmp.pdb/9DC3FC69B1CA4B34707EBC57FD1D6126-1
+INFO     volatility3.framework.automagic: Running automagic: SymbolFinder
+INFO     volatility3.framework.automagic: Running automagic: KernelModule
+DEBUG    volatility3.cli: Successfully constructed windows.apimaps.ApiMaps (1, 0, 0)
+
+PID	Process	Module	ImportedFrom	Function	Category	MatchType	Library
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_PO_PROCESS_ENERGY_CONTEXT
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_EPROCESS_QUOTA_BLOCK
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_PS_SYSCALL_PROVIDER
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_PAGEFAULT_HISTORY
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_JOB_ACCESS_STATE
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_JOB_CPU_RATE_CONTROL
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_JOB_NET_RATE_CONTROL
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_JOB_NOTIFICATION_INFORMATION
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_PSP_STORAGE
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_ACTIVATION_CONTEXT_DATA
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_CHPEV2_PROCESS_INFO
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_ASSEMBLY_STORAGE_MAP
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_EXP_LICENSE_STATE
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_NLS_STATE
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_DBGKP_ERROR_PORT
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_CI_NGEN_PATHS
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_EX_WNF_SUBSCRIPTION
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_ETW_EVENT_CALLBACK_CONTEXT
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_ETW_SOFT_RESTART_CONTEXT
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_ETW_STACK_CACHE
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_ETW_PERFECT_HASH_FUNCTION
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_EX_TIMER
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_HAL_PMC_COUNTERS
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_DEVICE_NODE_IOMMU_EXTENSION
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_SCSI_REQUEST_BLOCK
+DEBUG    volatility3.framework.symbols: Unresolved reference: wow641!_ULARGE_INTEGER
+DEBUG    volatility3.framework.symbols: Unresolved reference: wow641!_STRING32
+DEBUG    volatility3.framework.symbols: Unresolved reference: wow641!__unnamed_1083
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_ACTIVATION_CONTEXT
+DEBUG    volatility3.framework.symbols: Unresolved reference: symbol_table_name1!_LDRP_LOAD_CONTEXT
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module - @ 0x7ff869650000: import table not reconstructable (Page Fault at entry 0xb9841e23bca00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\wow64base.dll @ 0x7ff86a020000: import table not reconstructable (Page Fault at entry 0xb9841e20df600400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\wow64win.dll @ 0x7ff868180000: import table not reconstructable (Page Fault at entry 0xb9841e2518a00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\wow64con.dll @ 0x7ff8696c0000: import table not reconstructable (Page Fault at entry 0xb9841e313e900400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\wow64cpu.dll @ 0x77980000: import table not reconstructable (Page Fault at entry 0xb9841e239e700400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\KERNEL32.DLL @ 0x76e80000: import table not reconstructable (Page Fault at entry 0xb9841e3168200400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\KERNELBASE.dll @ 0x77020000: import table not reconstructable (Page Fault at entry 0xb9841e3250000400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\WS2_32.dll @ 0x77670000: import table not reconstructable (Page Fault at entry 0xb9841e3098a00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\RPCRT4.dll @ 0x777d0000: import table not reconstructable (Page Fault at entry 0xb9841e3219200400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\ADVAPI32.dll @ 0x77460000: import table not reconstructable (Page Fault at entry 0xb9841e309bc00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\msvcrt.dll @ 0x76750000: import table not reconstructable (Page Fault at entry 0xb9841e30c8a00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\sechost.dll @ 0x75fb0000: import table not reconstructable (Page Fault at entry 0xb9841e30e8a00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\ucrtbase.dll @ 0x76900000: import table not reconstructable (Page Fault at entry 0xb9841e3263b00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module c:\Program Files (x86)\Nmap\libssl-3.dll @ 0x74890000: import table not reconstructable (Page Fault at entry 0xb98425507ac00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\SYSTEM32\VCRUNTIME140.dll @ 0x74870000: import table not reconstructable (Page Fault at entry 0xb984255ff0e00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module c:\Program Files (x86)\Nmap\libcrypto-3.dll @ 0x742c0000: import table not reconstructable (Page Fault at entry 0xb9842b2d50000400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\USER32.dll @ 0x756a0000: import table not reconstructable (Page Fault at entry 0xb9841e32f2100400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\win32u.dll @ 0x77410000: import table not reconstructable (Page Fault at entry 0xb9841e24ef000400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\GDI32.dll @ 0x77430000: import table not reconstructable (Page Fault at entry 0xb9841e307df00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\gdi32full.dll @ 0x776d0000: import table not reconstructable (Page Fault at entry 0xb9841e3088a00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\msvcp_win.dll @ 0x75d80000: import table not reconstructable (Page Fault at entry 0xb9841e31b8a00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\SYSTEM32\bcrypt.dll @ 0x74850000: import table not reconstructable (Page Fault at entry 0xb9841e2f52200400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module C:\Windows\System32\IMM32.DLL @ 0x77950000: import table not reconstructable (Page Fault at entry 0xb9841e305e700400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module - @ 0x76a20000: import table not reconstructable (Page Fault at entry 0xb9841e322ba00400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module - @ 0x74830000: import table not reconstructable (Page Fault at entry 0xb984255ff2600400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module - @ 0x74800000: import table not reconstructable (Page Fault at entry 0xb98425a0a1800400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module - @ 0x74940000: import table not reconstructable (Page Fault at entry 0xb9842126be600400 in page entry)
+DEBUG    volatility3.plugins.windows.apimaps: PID 896 module - @ 0x747a0000: import table not reconstructable (Page Fault at entry 0xb9841e35a8a00400 in page entry)
+

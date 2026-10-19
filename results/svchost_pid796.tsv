@@ -1,0 +1,102 @@
+Volatility 3 Framework 2.28.3
+
+PID	Process	Module	ImportedFrom	Function	Category	MatchType	Library
+
+796	svchost.exe	C:\Windows\System32\bcrypt.dll	ntdll.dll	NtTerminateProcess	Helper	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	ntdll.dll	NtSetInformationThread	Helper	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	ntdll.dll	NtClose	Helper	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-profile-l1-1-0.dll	QueryPerformanceCounter	Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetCurrentThreadId	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-processthreads-l1-1-0.dll	TerminateProcess	Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetCurrentProcessId	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetCurrentProcess	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-sysinfo-l1-1-0.dll	GetTickCount	Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-sysinfo-l1-1-0.dll	GetSystemTimeAsFileTime	Enumeration, Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-libraryloader-l1-2-0.dll	GetProcAddress	Injection, Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-libraryloader-l1-2-0.dll	LoadLibraryExA	Injection, Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-heap-l2-1-0.dll	LocalAlloc	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-memory-l1-1-0.dll	VirtualProtect	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-heap-l1-1-0.dll	GetProcessHeap	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\kernel.appcore.dll	api-ms-win-core-heap-l1-1-0.dll	HeapAlloc	Injection	exact	Kernel32.dll
+796	svchost.exe	-	ntdll.dll	NtMapViewOfSection	Injection	exact	Ntdll.dll
+796	svchost.exe	-	ntdll.dll	NtUnmapViewOfSection	Injection	exact	Ntdll.dll
+796	svchost.exe	-	ntdll.dll	NtCreateSection	Injection	exact	Ntdll.dll
+796	svchost.exe	-	api-ms-win-core-libraryloader-l1-2-0.dll	GetModuleFileNameA	Helper	exact	Kernel32.dll
+796	svchost.exe	-	api-ms-win-core-synch-l1-1-0.dll	WaitForSingleObject	Injection, Evasion	exact	Kernel32.dll
+796	svchost.exe	-	api-ms-win-core-synch-l1-1-0.dll	WaitForSingleObjectEx	Injection, Evasion	exact	Kernel32.dll
+796	svchost.exe	-	api-ms-win-core-heap-l1-1-0.dll	HeapReAlloc	Injection	exact	Kernel32.dll
+796	svchost.exe	-	api-ms-win-core-processthreads-l1-1-0.dll	GetCurrentThread	Enumeration	exact	Kernel32.dll
+796	svchost.exe	-	api-ms-win-core-processthreads-l1-1-0.dll	TerminateThread	Helper	exact	Kernel32.dll
+796	svchost.exe	-	api-ms-win-core-debug-l1-1-0.dll	IsDebuggerPresent	Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	-	api-ms-win-core-registry-l1-1-0.dll	RegCloseKey	Helper	exact	Advapi32.dll
+796	svchost.exe	-	api-ms-win-core-synch-l1-2-0.dll	Sleep	Evasion, Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	-	api-ms-win-core-profile-l1-1-0.dll	QueryPerformanceFrequency	Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	-	USER32.dll	GetDC	Spying	exact	User32.dll
+796	svchost.exe	-	USER32.dll	SetWinEventHook	Spying	exact	User32.dll
+796	svchost.exe	C:\Windows\system32\lsmproxy.dll	KERNEL32.dll	TerminateProcess	Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\lsmproxy.dll	KERNEL32.dll	QueryPerformanceCounter	Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\lsmproxy.dll	KERNEL32.dll	GetCurrentProcess	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\lsmproxy.dll	KERNEL32.dll	GetTickCount	Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\lsmproxy.dll	KERNEL32.dll	GetSystemTimeAsFileTime	Enumeration, Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\lsmproxy.dll	KERNEL32.dll	GetCurrentThreadId	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\lsmproxy.dll	KERNEL32.dll	Sleep	Evasion, Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\lsmproxy.dll	KERNEL32.dll	GetCurrentProcessId	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\usermgrcli.dll	api-ms-win-core-processthreads-l1-1-0.dll	OpenProcessToken	Injection	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\usermgrcli.dll	api-ms-win-core-processthreads-l1-1-1.dll	OpenProcess	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-synch-l1-1-0.dll	WaitForMultipleObjectsEx	Injection, Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-processthreads-l1-1-0.dll	OpenThread	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetProcessId	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-registry-l1-1-0.dll	RegOpenCurrentUser	Helper	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-registry-l1-1-0.dll	RegSetKeySecurity	Helper	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-heap-l2-1-0.dll	GlobalAlloc	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-synch-l1-2-1.dll	WaitForMultipleObjects	Injection, Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-memory-l1-1-0.dll	MapViewOfFileEx	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-memory-l1-1-0.dll	MapViewOfFile	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-memory-l1-1-0.dll	UnmapViewOfFile	Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-memory-l1-1-0.dll	VirtualQueryEx	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	api-ms-win-core-threadpool-legacy-l1-1-0.dll	CreateTimerQueueTimer	Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	ntdll.dll	NtWaitForSingleObject	Evasion, Injection	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	ntdll.dll	NtDelayExecution	Evasion	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\System32\twinapi.appcore.dll	ntdll.dll	NtQueryInformationProcess	Enumeration, Anti-Debugging	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\system32\rsaenh.dll	ntdll.dll	NtCreateFile	Helper	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-core-libraryloader-l1-1-0.dll	LoadLibraryExA	Injection, Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-core-libraryloader-l1-1-0.dll	GetProcAddress	Injection, Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-core-libraryloader-l1-1-0.dll	GetModuleFileNameA	Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-core-registry-l1-1-0.dll	RegFlushKey	Helper	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-core-file-l1-1-0.dll	WriteFile	Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-core-file-l1-1-0.dll	FindClose	Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-security-base-l1-1-0.dll	AdjustTokenPrivileges	Injection	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-security-base-l1-1-0.dll	ImpersonateLoggedOnUser	Evasion, Helper	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\system32\AppXAllUserStore.dll	api-ms-win-core-heap-obsolete-l1-1-0.dll	LocalAlloc	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\wtsapi32.dll	api-ms-win-core-file-l1-1-0.dll	ReadFile	Enumeration	exact	Kernel32.dll
+796	svchost.exe	c:\windows\system32\SAMLIB.dll	api-ms-win-core-registry-l1-1-0.dll	RegSetValueExA	Helper	exact	Advapi32.dll
+796	svchost.exe	c:\windows\system32\SAMLIB.dll	api-ms-win-core-registry-l1-1-0.dll	RegQueryInfoKeyA	Enumeration	exact	Advapi32.dll
+796	svchost.exe	c:\windows\system32\SAMLIB.dll	api-ms-win-core-registry-l1-1-0.dll	RegOpenKeyExA	Helper	exact	Advapi32.dll
+796	svchost.exe	c:\windows\system32\SAMLIB.dll	api-ms-win-core-registry-l1-1-0.dll	RegDeleteKeyExA	Helper	exact	Advapi32.dll
+796	svchost.exe	c:\windows\system32\SAMLIB.dll	api-ms-win-core-registry-l1-1-0.dll	RegCreateKeyExA	Helper	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\system32\SmartCardBackgroundPolicy.dll	api-ms-win-core-sysinfo-l1-1-0.dll	GetTickCount64	Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\execmodelclient.dll	api-ms-win-core-libraryloader-l1-2-0.dll	LoadResource	Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\execmodelclient.dll	api-ms-win-core-libraryloader-l1-2-0.dll	LockResource	Evasion, Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\execmodelclient.dll	api-ms-win-core-processthreads-l1-1-0.dll	GetThreadId	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\execmodelclient.dll	api-ms-win-core-processthreads-l1-1-0.dll	CreateThread	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\PROPSYS.dll	api-ms-win-core-localization-l1-2-0.dll	GetThreadLocale	Enumeration	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\PROPSYS.dll	api-ms-win-core-sysinfo-l1-1-0.dll	GetSystemTime	Enumeration, Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\PROPSYS.dll	api-ms-win-core-memory-l1-1-0.dll	VirtualAlloc	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\CoreMessaging.dll	api-ms-win-core-processthreads-l1-1-0.dll	SetThreadPriority	Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\CoreMessaging.dll	api-ms-win-core-synch-l1-1-0.dll	SetWaitableTimer	Evasion	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\CoreMessaging.dll	api-ms-win-core-heap-l1-1-0.dll	HeapCreate	Injection	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\System32\CoreMessaging.dll	WS2_32.dll	WSAIoctl	Internet	exact	ws2_32.dll
+796	svchost.exe	C:\Windows\System32\CoreMessaging.dll	WS2_32.dll	WSACleanup	Internet	exact	Ws2_32.dll
+796	svchost.exe	C:\Windows\System32\CoreMessaging.dll	WS2_32.dll	WSAStartup	Internet	exact	Ws2_32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\licensemanagerapi.dll	api-ms-win-core-processthreads-l1-1-0.dll	SetThreadToken	Evasion, Helper	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\licensemanagerapi.dll	api-ms-win-security-base-l1-1-0.dll	DuplicateToken	Injection, Evasion	exact	Advapi32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\licensemanagerapi.dll	ntdll.dll	NtOpenProcess	Injection	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\System32\AppXDeploymentClient.dll	api-ms-win-core-synch-l1-1-0.dll	SleepEx	Evasion, Anti-Debugging	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\SYSTEM32\policymanager.dll	ntdll.dll	RtlGetVersion	Enumeration, Anti-Debugging	exact	NtosKrnl.lib
+796	svchost.exe	C:\Windows\SYSTEM32\policymanager.dll	api-ms-win-core-io-l1-1-0.dll	DeviceIoControl	Helper	exact	Kernel32.dll
+796	svchost.exe	C:\Windows\system32\apphelp.dll	ntdll.dll	LdrLoadDll	Injection	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\system32\apphelp.dll	ntdll.dll	NtProtectVirtualMemory	Injection	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\system32\apphelp.dll	ntdll.dll	NtDeleteKey	Helper	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\system32\apphelp.dll	ntdll.dll	NtDeleteValueKey	Helper	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\system32\apphelp.dll	ntdll.dll	NtSetValueKey	Helper	exact	Ntdll.dll
+796	svchost.exe	C:\Windows\system32\apphelp.dll	api-ms-win-core-debug-l1-1-0.dll	OutputDebugStringA	Anti-Debugging	exact	Kernel32.dll
