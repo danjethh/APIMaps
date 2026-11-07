@@ -120,6 +120,21 @@ Output is a standard Volatility3 TreeGrid: one row per
 (process, module, imported function) with its MalAPI category/categories,
 match type, and the library MalAPI.io lists for it.
 
+## Demonstration sample
+
+A memory sample demonstrating APIMaps' capabilities: the official Volatility 3 test-corpus
+Windows 10 19041 x64 image, published by the Volatility Foundation itself (not redistributed
+by this repository — fetched directly from the Foundation's own release):
+
+    curl -LO https://github.com/volatilityfoundation/volatility3-test-data/releases/download/v0.0.1/win-10_19041-2025_03.dmp.gz
+    sha256sum win-10_19041-2025_03.dmp.gz   # expect b377ecd13bf40c90f59a8c41ffc8bc81166462627a7800ec82a67a73520c7f9d
+    gunzip win-10_19041-2025_03.dmp.gz
+    vol -p ./plugin -f win-10_19041-2025_03.dmp windows.apimaps.ApiMaps --pid 1956
+
+This reproduces the `MsMpEng.exe` (PID 1956, 49 matches) result in Testing below. The
+`total_recall` image used for the WoW64 regression check is a separate public
+forensics-course image; see Testing for how to obtain it.
+
 ## Testing
 
 Read-only; never modifies the source image; no synthetic/custom test images
