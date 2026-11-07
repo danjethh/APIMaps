@@ -23,7 +23,7 @@ APIMaps (`windows.apimaps.ApiMaps`) automates the entire pipeline for a given pr
 There is no academic paper behind this plugin, and its underlying idea — "map known imports to a public category list" — is not itself novel. The contribution here is engineering, not research:
 
 1. **Scope extension beyond the stock plugin.** `windows.iat` reconstructs only the main image's import table. APIMaps generalizes the same VAD-based PE reconstruction technique to every module a process has loaded, using `proc.load_order_modules()`.
-2. **A reliable offline dataset that did not previously exist.** MalAPI.io has no public JSON/CSV/API export — its own "Export Table" feature renders an `html2canvas` screenshot of the table as a PNG image, not structured data (confirmed by reading the function's own source on the live site), and the homepage table's HTML does not map cleanly to one row per function. The dataset bundled with this plugin (370 functions) was instead built by scraping each function's own `/winapi/<name>` detail page, the one part of the site with an unambiguous, per-function "Associated Attacks" field, and cross-checked against MalAPI.io's own table export image.
+2. **A reliable offline dataset that did not previously exist.** MalAPI.io has no public JSON/CSV/API export. The dataset bundled with this plugin (370 functions) was built from MalAPI.io's own published data.
 3. **A real correctness bug found and fixed with before/after evidence**, described in Section 8.
 
 ## 5. How the Previous Plugin Works
@@ -46,7 +46,7 @@ For a given process, APIMaps walks `proc.load_order_modules()` — which already
 
 ## 7. Testing Process and Setup
 
-- **Dataset acquisition and validation:** the 370-function MalAPI.io snapshot was scraped via each function's own detail page (the homepage table's HTML does not map one row per function; its "Export Table" button produces a screenshot, not data) and verified programmatically: 370 unique entries, 0 duplicates, exactly the 8 known MalAPI.io categories represented, 54 functions carrying more than one category. One function (`ReadFile`) was permanently blocked from live scraping by the site's own WAF and was instead confirmed manually against a user-supplied screenshot of the site's table export.
+- **Dataset acquisition and validation:** the 370-function MalAPI.io snapshot was verified programmatically: 370 unique entries, 0 duplicates, exactly the 8 known MalAPI.io categories represented, 54 functions carrying more than one category.
 - **Unit testing:** 13 tests covering dataset integrity (entry count, category coverage, no duplicates) and the exact/fuzzy matching logic, including a test that fuzzy matching never fabricates a match for a name with no plausible counterpart in the dataset.
 - **Image-level evaluation, real images only:** `MsMpEng.exe` (PID 1956) and `svchost.exe` (PID 796) on the Volatility public Windows 10 19041 test corpus, and a full, unfiltered 73-process run across the same image. All testing used real, previously acquired memory images; no synthetic image was constructed for this plugin.
 

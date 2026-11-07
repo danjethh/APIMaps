@@ -63,19 +63,12 @@ usage and the dataset's provenance are in the repository README.
    and `results/SUMMARY.md` rather than presented as if a match were
    evidence of malice. This is a triage/correlation aid, not a verdict.
 
-## Data provenance (why this needed real engineering, not a copy-paste)
+## Data provenance
 
-MalAPI.io has no public JSON/CSV/API export; its own "Export Table" button
-renders an `html2canvas` PNG screenshot of the table, not structured data
-(confirmed by reading the function's own minified source on the live site).
-The homepage table's HTML also does not map cleanly to one-row-per-function
-(confirmed empirically via contradictory column-indexed scrapes). The
-bundled dataset (`apimaps_data.json`, 370 functions) was instead built by
-scraping each function's own `/winapi/<name>` detail page, which has an
-unambiguous `Associated Attacks` field, and cross-checked against MalAPI.io's
-own table-screenshot export of the same data. It ships as a static,
-locally-cached file — this plugin never depends on live internet access at
-scan time.
+MalAPI.io has no public JSON/CSV/API export. The bundled dataset
+(`apimaps_data.json`, 370 functions) was built from MalAPI.io's own
+published data. It ships as a static, locally-cached file — this plugin
+never depends on live internet access at scan time.
 
 ## Repository
 
