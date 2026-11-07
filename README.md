@@ -22,21 +22,10 @@ imported.
 
 ## MalAPI.io dataset (`apimaps_data.json`)
 
-MalAPI.io has **no public JSON/CSV/API export**. Its own "Export Table"
-button does not export data at all — it calls `html2canvas` on the table and
-downloads a **PNG screenshot** of it (confirmed by reading the function's own
-source via the live site, not assumed). Its homepage table's underlying
-HTML also does not map cleanly to "one row per API, one column per
-category" (confirmed empirically: naive column-index scraping of the
-homepage produced internally contradictory category assignments for the
-same function).
-
-The dataset bundled here (`plugin/windows/apimaps_data.json`, 370 functions,
-8 categories) was instead built by scraping each function's own detail page
-(`https://malapi.io/winapi/<FunctionName>`), which has a clean, unambiguous
-`Associated Attacks` field per function, cross-checked against MalAPI.io's
-own table-screenshot export for the same data (acquired 2026-10-19). This is
-a **static, locally cached snapshot** — this plugin does not and must not
+MalAPI.io has **no public JSON/CSV/API export**. The dataset bundled here
+(`plugin/windows/apimaps_data.json`, 370 functions, 8 categories) was built
+from MalAPI.io's own published data (acquired 2026-10-19). This is a
+**static, locally cached snapshot** — this plugin does not and must not
 depend on live internet access at scan time, since examiners analyzing
 memory images are routinely offline. The categorization itself is MalAPI.io's
 own (credited to mr.d0x and contributors), not invented or re-derived here.
